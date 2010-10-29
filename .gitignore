@@ -1,0 +1,11 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+.DS_Store
+log/*.pid
+assets/**/*
+db/sphinx/**/*
+config/database.yml
+config/staging.sphinx.conf
+public/sitemap.xml
