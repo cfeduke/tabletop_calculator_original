@@ -6,6 +6,5 @@ tmp/**/*
 log/*.pid
 assets/**/*
 db/sphinx/**/*
-config/database.yml
 config/staging.sphinx.conf
 public/sitemap.xml
