@@ -1,6 +1,37 @@
-army
+Build an army list
+	Choose/enter a faction
+	Define point total
+	Add units
+	Add options for units
+	Game system
+	Tags
+	Comment
+
+When viewing a list that is not your own
+	Comment
+	Vote up/down army
+
+Show most recent army lists first in general display
+
+Armies
 	name
+	faction
+	author_id
 	description
-	created_at
-	updated_at
-	game_system
+	point_total
+
+Units
+	name
+	point_cost
+	army_id
+	
+Options
+	name
+	point_cost
+	
+Tags
+	name
+	
+Game Systems
+	name
+	
