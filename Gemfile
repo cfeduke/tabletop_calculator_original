@@ -33,10 +33,19 @@ gem 'haml'
 gem "compass", ">= 0.10.5"
 gem "devise", ">= 1.1.0"
 
+# nokogiri is a bitch to install on OS X Snow Leopard
+# install MacPorts from source
+# sudo port install libxml2 libxslt
+# gem install nokogiri
+
 group :test do
   gem "rspec"
   gem "rspec-rails"
   gem "factory_girl"
-  gem "cucumber"
   gem "webrat"
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'spork'
+  gem 'launchy'
 end
