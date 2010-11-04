@@ -1,4 +1,6 @@
 TabletopCalculator::Application.routes.draw do
+  resources :armies
+
   devise_for :users
 
   get "home/index"
