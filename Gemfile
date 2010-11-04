@@ -48,4 +48,7 @@ group :test do
   gem 'cucumber'
   gem 'spork'
   gem 'launchy'
+  #ruby script/rails generate cucumber:install --rspec --capybara
+  #rake db:test:load
+  #rake db:migrate
 end
