@@ -7,3 +7,21 @@ REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
 REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
 REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
 REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /armies with {"utf8"=>"\xE2\x9C\x93", "army"=>{"name"=>"Gepanzerte Panzergrenadierekompanie", "point_total"=>"1750", "description"=>"Armored panzer grenadier company"}, "commit"=>"Create Army"} and HTTP headers {"HTTP_REFERER"=>"/armies/new"}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /armies with {"utf8"=>"\xE2\x9C\x93", "army"=>{"name"=>"Gepanzerte Panzergrenadierekompanie", "point_total"=>"1750", "description"=>"Armored panzer grenadier company"}, "commit"=>"Create Army"} and HTTP headers {"HTTP_REFERER"=>"/armies/new"}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /armies with {"utf8"=>"\xE2\x9C\x93", "army"=>{"name"=>"Gepanzerte Panzergrenadierekompanie", "point_total"=>"1750", "description"=>"Armored panzer grenadier company"}, "commit"=>"Create Army"} and HTTP headers {"HTTP_REFERER"=>"/armies/new"}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /armies with {"utf8"=>"\xE2\x9C\x93", "army"=>{"name"=>"Gepanzerte Panzergrenadierekompanie", "point_total"=>"1750", "description"=>"Armored panzer grenadier company"}, "commit"=>"Create Army"} and HTTP headers {"HTTP_REFERER"=>"/armies/new"}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /armies with {"utf8"=>"\xE2\x9C\x93", "army"=>{"name"=>"Gepanzerte Panzergrenadierekompanie", "point_total"=>"1750", "description"=>"Armored panzer grenadier company"}, "commit"=>"Create Army"} and HTTP headers {"HTTP_REFERER"=>"/armies/new"}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /armies with {"utf8"=>"\xE2\x9C\x93", "army"=>{"name"=>"Gepanzerte Panzergrenadierekompanie", "point_total"=>"1750", "description"=>"Armored panzer grenadier company"}, "commit"=>"Create Army"} and HTTP headers {"HTTP_REFERER"=>"/armies/new"}
+REQUESTING PAGE: GET /armies/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /armies with {"utf8"=>"\xE2\x9C\x93", "army"=>{"name"=>"Gepanzerte Panzergrenadierekompanie", "point_total"=>"1750", "description"=>"Armored panzer grenadier company"}, "commit"=>"Create Army"} and HTTP headers {"HTTP_REFERER"=>"/armies/new"}
