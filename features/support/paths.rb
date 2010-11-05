@@ -10,6 +10,8 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /create army page/
+      new_army_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

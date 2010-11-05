@@ -1,0 +1,16 @@
+- form_for(@army) do |f|
+	.field
+		= f.label :name
+		%br/
+		~ f.text_field :name
+	.field
+		= f.label :point_total
+		%br/
+		~ f.number_field :point_total
+	.field
+		= f.label :description
+		%br/
+		~ f.text_area :description
+	
+	.actions
+		= f.submit

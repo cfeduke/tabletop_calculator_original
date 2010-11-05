@@ -51,4 +51,5 @@ group :test do
   #ruby script/rails generate cucumber:install --rspec --capybara
   #rake db:test:load
   #rake db:migrate
+  #rake environment RAILS_ENV=test db:migrate
 end
