@@ -31,7 +31,7 @@ Feature: Manage Armies
     And I should have 1 army
     
   Scenario: Show army
-    Given an army exists with name: "Gepanzerte Panzergrenadierekompanie", description: "Armored panzer grenadier company", point total: "1750"
+    Given an army exists with name: "Gepanzerte Panzergrenadierekompanie", description: "Armored panzer grenadier company", point_total: "1750"
     When I go to the show page for that army
     Then I should see "Gepanzerte Panzergrenadierekompanie"
     And I should see "Armored panzer grenadier company"
