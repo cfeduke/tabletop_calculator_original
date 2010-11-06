@@ -1,0 +1,6 @@
+- if target.errors.any?
+	.error
+		%h2 #{pluralize(target.errors.full_message_per_field.count, 'error')} prohibited this record from being saved:
+		%ul
+			- target.errors.full_message_per_field.each do |msg|
+				%li=msg
