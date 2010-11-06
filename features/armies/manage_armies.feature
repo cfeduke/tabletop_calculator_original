@@ -23,7 +23,6 @@ Feature: Manage Armies
     | Point Total | 1750                                |
     | Description | Armored panzer grenadier company    |
     And I press "Create Army"
-    And I follow "redirected"
     Then I should see "Army was successfully created."
     And I should see "Gepanzerte Panzergrenadierekompanie"
     And I should see "Armored panzer grenadier company"
