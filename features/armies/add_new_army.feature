@@ -6,9 +6,9 @@ Feature: Add new army
   Scenario: Adding an army
     Given I am on the create army page
     When I fill in the following:
-    | Name          | Gepanzerte Panzergrenadierekompanie |
-    | Point Total   | 1750                                |
-    | Description   | Armored panzer grenadier company    |
+    | Name        | Gepanzerte Panzergrenadierekompanie |
+    | Point Total | 1750                                |
+    | Description | Armored panzer grenadier company    |
     And I press "Create Army"
     And I follow "redirected"
     Then I should see "Gepanzerte Panzergrenadierekompanie" within "h1"
