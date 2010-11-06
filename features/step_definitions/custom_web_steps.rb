@@ -9,3 +9,13 @@ Then /^I should be redirected to the (.+) page$/ do |page_name|
 
   Then "I should be on the #{page_name} page"
 end
+
+Then /^(?:|I )should see "([^"]*)" on (.+)$/ do |text, page_name|
+  visit path_to(page_name) 
+  
+  if defined?(Spec::Rails::Matchers)
+    response.should contain(text)
+  else
+    assert_contain text
+  end 
+end
