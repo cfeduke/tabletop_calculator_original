@@ -42,7 +42,7 @@ group :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'factory_girl'
-  gem 'webrat', :git => 'https://github.com/kalv/webrat.git'
+  gem 'webrat'  #  , :git => 'https://github.com/kalv/webrat.git'
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'cucumber'
