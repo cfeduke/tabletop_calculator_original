@@ -1,5 +1,5 @@
 %h1 Armies
-- for army in @armies
+- @armies.each do |army|
 	= link_to army.name, army_path(army)
 
-= link_to "Add Army", new_army_path
+= link_to "New Army", new_army_path
