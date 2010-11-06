@@ -8,3 +8,5 @@ assets/**/*
 db/sphinx/**/*
 config/staging.sphinx.conf
 public/sitemap.xml
+.idea/
+webrat.log
