@@ -30,8 +30,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # end
 
 gem 'haml'
-gem "compass", ">= 0.10.5"
-gem "devise", ">= 1.1.0"
+gem 'compass', '>= 0.10.5'
+gem 'devise', '>= 1.1.0'
 
 # nokogiri is a bitch to install on OS X Snow Leopard
 # install MacPorts from source
@@ -39,15 +39,16 @@ gem "devise", ">= 1.1.0"
 # gem install nokogiri
 
 group :test do
-  gem "rspec"
-  gem "rspec-rails"
-  gem "factory_girl"
-  gem "webrat"
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl'
+  gem 'webrat', :git => 'https://github.com/kalv/webrat.git'
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'cucumber'
   gem 'spork'
   gem 'launchy'
+  gem 'pickle'
   #ruby script/rails generate cucumber:install --rspec --capybara
   #rake db:test:load
   #rake db:migrate
