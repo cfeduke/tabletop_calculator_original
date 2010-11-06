@@ -67,6 +67,11 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     nokogiri (1.4.3.1)
+    pickle (0.4.3)
+      cucumber (>= 0.8)
+      rake
+      rspec (>= 1.3)
+      yard
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -112,6 +117,7 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
+    yard (0.6.1)
 
 PLATFORMS
   ruby
@@ -125,6 +131,7 @@ DEPENDENCIES
   factory_girl
   haml
   launchy
+  pickle
   rails (= 3.0.1)
   rspec
   rspec-rails

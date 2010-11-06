@@ -12,9 +12,12 @@ module NavigationHelpers
       '/'
     when /create army page/
       new_army_path
-    when /show army page for "(\d)"/
-      army_path($1)
+    when /list of armies/
+      armies_path
 
+    when /the show page for (.+)/
+      polymorphic_path(model($1))
+      
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
