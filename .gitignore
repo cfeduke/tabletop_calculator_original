@@ -1,6 +1,7 @@
 .bundle
 db/*.sqlite3
 log/*.log
+tmp/webrat*.html
 tmp/**/*
 .DS_Store
 log/*.pid
@@ -10,3 +11,4 @@ config/staging.sphinx.conf
 public/sitemap.xml
 .idea/
 webrat.log
+
