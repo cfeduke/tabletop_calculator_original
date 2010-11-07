@@ -1,3 +1,4 @@
+- #@army.units.build #this will cause a blank unit to be added
 - form_for(@army) do |f|
 	= render "shared/error_messages", :target => @army
 	.field
@@ -12,6 +13,9 @@
 		= f.label :description
 		%br/
 		~ f.text_area :description
+	
+	%h2 Units
+	= render :partial => 'units/form', :locals => {:form => f}
 	
 	.actions
 		= f.submit

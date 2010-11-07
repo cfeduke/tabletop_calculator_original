@@ -1,0 +1,13 @@
+- form.fields_for :units do |f|
+	.field
+		= f.label :slot
+		%br/
+		~ f.text_field :slot
+	.field 
+		= f.label :name
+		%br/
+		~ f.text_field :name
+	- unless f.object.nil? || f.object.new_record?
+		.field
+			= f.label :_destroy, 'Remove'
+			= f.check_box :_destroy
