@@ -1,3 +1,6 @@
 %h1= h @army.name
 %p= h @army.point_total
 %p= h @army.description
+
+%h2 Units
+= render :partial => 'units/unit', :collection => @army.units 

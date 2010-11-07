@@ -21,9 +21,8 @@ Armies
 	point_total
 
 Units
+	slot
 	name
-	point_cost
-	army_id
 	
 Options
 	name
