@@ -76,7 +76,7 @@ class ArmiesController < ApplicationController
     @army.destroy
 
     respond_to do |format|
-      format.html { redirect_to(armies_url) }
+      format.html { redirect_to(armies_url, :notice => 'Army was successfully deleted.') }
       format.xml  { head :ok }
     end
   end

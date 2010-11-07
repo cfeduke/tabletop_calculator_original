@@ -5,10 +5,10 @@ Feature: Manage Armies
   
   Scenario: Armies list
     Given the following armies exist
-    | name   | description    | point_total |
-    | Army 1 | This is army 1 | 1000        |
-    | Army 2 | This is army 2 | 2000        |
-    | Army 3 | This is army 3 | 3000        |
+    | name   |
+    | Army 1 |
+    | Army 2 |
+    | Army 3 |
     When I go to the list of armies
     Then I should see "Army 1"
     And I should see "Army 2"
@@ -35,3 +35,22 @@ Feature: Manage Armies
     Then I should see "Gepanzerte Panzergrenadierekompanie"
     And I should see "Armored panzer grenadier company"
     And I should see "1750"
+
+  Scenario: Deleting an army
+    Given the following armies exist
+    | name   |
+    | Army 1 |
+    | Army 2 |
+    | Army 3 |
+    When I go to the list of armies
+    And I follow "Army 1"
+    And I follow "Delete Army"
+    Then I should see "Army was successfully deleted."
+    And an army with name: "Army 1" should not exist
+    And I should have 2 armies
+
+ # Test that only the user or an administrator can delete a users armies
+
+
+
+    

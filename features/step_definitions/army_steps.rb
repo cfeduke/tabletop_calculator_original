@@ -1,5 +1,5 @@
 Then /^I should have (\d+) arm(?:y|ies)$/ do |count|
-  Army.count.should == count.to_i
+  Then "#{count} armies should exist"
 end
 
 Given /^no armies exist$/ do
