@@ -3,4 +3,7 @@
 %p= h @army.description
 
 %h2 Units
-= render :partial => 'units/unit', :collection => @army.units 
+= render :partial => 'units/unit', :collection => @army.units
+
+= link_to "Delete Army", army_url(@army), :method => :delete
+= link_to "Edit Army", edit_army_url(@army)
