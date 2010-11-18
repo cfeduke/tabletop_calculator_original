@@ -1,0 +1,27 @@
+body { margin:50px; font-size:0.9em; line-height:20px; font-family: "Myriad Pro", "Trebuchet MS", Arial;  background: url(../../images/bckg.gif) #000; border:1px solid #666666;}
+a { color:#C23B01;}
+a:hover { color:#333333;}
+#container { background-color:#fff;}
+#header { background:url(../images/header_bckg_main.jpg) repeat-x  #C13B00; }
+#logo { background:url(../images/header_bckg.jpg) no-repeat; padding:30px 0 0 40px; height:83px; color:#FFFFFF; font-style:italic; }
+#logo a{ color:#FFFFFF; text-decoration:none; font-weight:bold; font-size:20px; font-style:italic; text-transform:uppercase;}
+#menu { background: url(../images/menu_bckg.jpg) #FF6600; height:30px; }
+#menu ul { margin:0; padding:0;}
+#menu ul li{ display:inline-block; float:left; width:104px; list-style:none; text-align:center; }
+#menu a { display:block; float:left; width:104px; color:#fff; font-size:14px; text-transform:uppercase; font-weight:bold; text-decoration:none; padding-top:4px; font-style:italic;}
+#menu a:hover{ padding-top:4px; height:22px; background:url(../images/menu_bckg_over.jpg) #C23B01;}
+
+#text { margin: 0 270px 0 20px;}
+#text p { padding:0 20px 10px 0;}
+#text li {list-style:none; padding-left:20px; background:url(../images/li.gif) no-repeat 0px 7px;}
+#sidebar { float:right; width:200px; padding: 0 20px 0 10px; font-size:14px;}
+h1 { margin:0; padding:0; text-transform:uppercase; font-size:1.8em; color:#1B1D1E; font-style:italic}
+
+#main { float:left; background:url(../images/sidebar_bckg.gif) repeat-y top right #fff; padding:20px 0 0 0;}
+#footer { background:url(../images/footer_bckg.jpg) #424E4F; height:102px; clear:both; font-style:italic }
+#left_footer { float:left; padding:40px 0 0 30px; text-transform:uppercase; color:#FFFFFF; font-weight:bold; font-size:12px;}
+#left_footer a { color:#FFFFFF;}
+#left_footer a:hover { text-decoration:none;}
+#right_footer { float:right; padding:40px 30px 0 0; text-transform:uppercase; color:#FFFFFF; font-weight:bold; font-size:12px; text-align:right; width:400px;}
+#right_footer a { color:#FFFFFF;}
+#right_footer a:hover { text-decoration:none;}

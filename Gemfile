@@ -30,8 +30,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # end
 
 gem 'haml'
-gem 'compass', '>= 0.10.5'
+#gem 'compass', '>= 0.10.5'
 gem 'devise', '>= 1.1.0'
+gem 'jquery-rails'
 
 # nokogiri is a bitch to install on OS X Snow Leopard
 # install MacPorts from source
