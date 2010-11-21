@@ -5,6 +5,7 @@
 		= csrf_meta_tag
 		= stylesheet_link_tag 'style.css'
 		= javascript_include_tag :defaults
+		= yield :head
 		
 		%title Tabletop Calculator
 			
@@ -29,6 +30,6 @@
 			#footer
 				#left_footer &copy; 2010 Siamesehead
 				#right_footer 
-					d
+					design by
 					%a{ :href => "http://www.realitysoftware.ca", :title => "Website Design"} Reality Software
 			

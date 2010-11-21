@@ -1,2 +1,5 @@
-%h1 Add an Army
+- content_for :head do
+	= javascript_include_tag "jquery.tmpl.min.js"
+
+%h1 New Army
 = render 'form'

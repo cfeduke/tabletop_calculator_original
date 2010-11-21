@@ -8,6 +8,4 @@
 		%br/
 		~ f.text_field :name
 	- unless f.object.nil? || f.object.new_record?
-		.field
-			= f.label :_destroy, 'Remove'
-			= f.check_box :_destroy
+		= link_to_function 'Remove', "remove_fields(this)"
