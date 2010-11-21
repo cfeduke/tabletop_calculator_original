@@ -19,11 +19,10 @@
 		~ f.text_area :description, {:rows => 5}
 	
 	%h2 Units
-	#units.fields
-		- f.fields_for :units do |builder|
-			= render :partial => 'unit_fields', :locals => {:f => builder}
+	- f.fields_for :units do |builder|
+		= render :partial => 'unit_fields', :locals => {:f => builder}
 
-		= link_to_add_fields "Add Unit", f, :units
+	= link_to_add_fields "Add Unit", f, :units
 	
 	.actions
 		= f.submit
