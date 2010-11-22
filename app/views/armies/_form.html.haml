@@ -22,7 +22,9 @@
 	- f.fields_for :units do |builder|
 		= render :partial => 'unit_fields', :locals => {:f => builder}
 
-	= link_to_add_fields "Add Unit", f, :units
+	%br/
+	#add
+		= link_to_add_fields "Add Unit", f, :units
 	
 	.actions
 		= f.submit

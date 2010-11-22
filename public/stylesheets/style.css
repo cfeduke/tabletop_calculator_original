@@ -25,3 +25,8 @@ h1 { margin:0; padding:0; text-transform:uppercase; font-size:1.8em; color:#1B1D
 #right_footer { float:right; padding:40px 30px 0 0; text-transform:uppercase; color:#FFFFFF; font-weight:bold; font-size:12px; text-align:right; width:400px;}
 #right_footer a { color:#FFFFFF;}
 #right_footer a:hover { text-decoration:none;}
+
+div.no_br {float:left;}
+div.remove {float:right;}
+div.add {float:left;}
+div.unit_point_total { text-align:center;}

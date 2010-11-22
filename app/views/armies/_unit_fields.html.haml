@@ -1,10 +1,14 @@
 #units.fields
-	= link_to_remove_fields "Remove", f
-	.field
+	.remove
+		= link_to_remove_fields "Remove Unit", f
+	.field.no_br
 		= f.label :slot
 		%br/
-		~ f.text_field :slot
-	.field 
+		= f.text_field :slot, :size => 10
+	.field.no_br
 		= f.label :name
 		%br/
 		~ f.text_field :name
+	.field
+		.unit_point_total
+			0
