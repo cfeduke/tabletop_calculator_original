@@ -14,3 +14,6 @@
 			0
 	- f.fields_for :unit_options do |builder|
 		= render :partial => 'unit_option_fields', :locals => {:f => builder}
+	
+	.add
+		= link_to_add_fields "Add Option", f, :unit_options
