@@ -1,10 +1,11 @@
 class Army < ActiveRecord::Base
   validates :name, 
-            :presence => true,
-            :uniqueness => true # later this will become unique per author
+            :presence     => true,
+            :uniqueness   => true # later this will become unique per author
   validates :point_total, 
-            :presence => true, 
+            :presence     => true, 
             :numericality => { :greater_than_or_equal_to => 0 }
+
   
   has_many :units, :dependent => :destroy
   
