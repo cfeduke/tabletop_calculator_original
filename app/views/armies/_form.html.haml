@@ -1,5 +1,5 @@
 - @army.units.build #this will cause a blank unit to be added
-- @army.units[0].unit_options.build
+- @army.units.last.unit_options.build
 - form_for(@army) do |f|
 	= render "shared/error_messages", :target => @army
 	.field
