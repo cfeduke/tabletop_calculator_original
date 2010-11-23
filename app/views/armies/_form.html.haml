@@ -1,4 +1,5 @@
 - @army.units.build #this will cause a blank unit to be added
+- @army.units[0].unit_options.build
 - form_for(@army) do |f|
 	= render "shared/error_messages", :target => @army
 	.field
@@ -23,7 +24,7 @@
 		= render :partial => 'unit_fields', :locals => {:f => builder}
 
 	%br/
-	#add
+	.add
 		= link_to_add_fields "Add Unit", f, :units
 	
 	.actions
