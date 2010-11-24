@@ -4,28 +4,28 @@
 	= render "shared/error_messages", :target => @army
 	.field
 		= f.label :name
-		%br/
+		%br
 		~ f.text_field :name
 	.field
 		= f.label :faction
-		%br/
+		%br
 		~ f.text_field :faction
 	.field
 		= f.label :point_total
-		%br/
+		%br
 		~ f.number_field :point_total, :size => 8
 	.field
 		= f.label :description
-		%br/
+		%br
 		~ f.text_area :description, {:rows => 5}
 	
 	%h2 Units
 	- f.fields_for :units do |builder|
 		= render :partial => 'unit_fields', :locals => {:f => builder}
 
-	%br/
+	%br
 	.add
 		= link_to_add_fields "Add Unit", f, :units
-	
+	%br
 	.actions
 		= f.submit

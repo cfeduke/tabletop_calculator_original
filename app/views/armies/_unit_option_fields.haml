@@ -1,9 +1,9 @@
 #unit_option.fields
-	.remove
+	.remove.no_br
 		= link_to_remove_fields "x", f
 	.field.no_br
 		= f.text_field :name
 	.field
 		= f.number_field :points, :size => 10
-	%br/
+	%br
 	
