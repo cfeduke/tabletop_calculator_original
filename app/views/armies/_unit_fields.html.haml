@@ -1,4 +1,4 @@
-#units.fields.row
+.fields
 	.remove
 		= link_to_remove_fields "Remove Unit", f
 	.row
@@ -10,6 +10,6 @@
 			0
 	- f.fields_for :unit_options do |builder|
 		= render :partial => 'unit_option_fields', :locals => {:f => builder}
-	.row
-		.add
-			= link_to_add_fields "Add Option", f, :unit_options
+
+.add
+	= link_to_add_fields "add", f, :unit_options

@@ -16,7 +16,7 @@ nav a:hover{ padding-top:4px; height:22px; background:url(../images/menu_bckg_ov
 #text p { padding:0 20px 10px 0;}
 #text li {list-style:none; padding-left:20px; background:url(../images/li.gif) no-repeat 0px 7px;}
 aside { float:right; width:200px; padding: 0 20px 0 10px; font-size:14px; display:block;}
-h1 { margin:0; padding:0; text-transform:uppercase; font-size:1.8em; color:#1B1D1E; font-style:italic}
+header h1 { margin:0; padding:0; text-transform:uppercase; font-size:1.8em; color:#1B1D1E; font-style:italic; text-shadow:0 2px 3px rgba(0,0,0,.8);}
 
 section#main { float:left; background:url(../images/sidebar_bckg.gif) repeat-y top right #fff; padding:20px 0 0 0;}
 footer { background:url(../images/footer_bckg.jpg) #424E4F; height:102px; clear:both; font-style:italic; display:block; }
@@ -28,8 +28,8 @@ footer a:hover { text-decoration:none;}
 div.row {display:table-row;}
 .fields div.field {display:table-cell;}
 div.fields {}
-div.remove {display:table-cell;}
-div.add {}
+div.remove {text-align:right;padding-right:5px;}
+div.add {text-align:right;}
 .unit_point_total {text-align:center;font-size:x-large;}
 .placeholder {color:#aaa;}
 div#units {display:table;}

@@ -1,5 +1,5 @@
 - @army.units.build #this will cause a blank unit to be added
-- @army.units.last.unit_options.build
+- @army.units.each {|unit| unit.unit_options.build} # and each unit should have a blank option ready for editing
 - form_for(@army) do |f|
 	= render "shared/error_messages", :target => @army
 	.field
@@ -20,12 +20,22 @@
 		~ f.text_area :description, {:rows => 5}
 	
 	%h2 Units
-	- f.fields_for :units do |builder|
-		= render :partial => 'unit_fields', :locals => {:f => builder}
+	#units
+		- f.fields_for :units do |builder|
+			= render :partial => 'unit_fields', :locals => {:f => builder}
 
-	%br
 	.add
 		= link_to_add_fields "Add Unit", f, :units
-	%br
 	.actions
 		= f.submit
+		
+:javascript
+	function unit_sum()
+	{
+		
+		console.log(this.value);
+	}
+	
+	$(document).ready(function() {
+		$("input.unit_option_points").blur(unit_sum);
+	});

@@ -1,7 +1,7 @@
 .row.fields
-	.field
+	.field.remove
 		= link_to_remove_fields "x", f
 	.field
 		= f.text_field :name, :placeholder => "name"
 	.field
-		= f.number_field :points, :size => 10, :placeholder => "points"	
+		= f.number_field :points, :size => 10, :class => "unit_option_points"
