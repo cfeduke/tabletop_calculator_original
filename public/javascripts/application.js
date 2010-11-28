@@ -1,8 +1,8 @@
 function remove_fields(link) {
 	$(link).prev("input[type=hidden]").val("1");
 	var fields = $(link).closest(".fields");
-	fields.hide();
 	fields.next(".add").hide();
+	fields.fadeOut();
 }
 	
 
@@ -12,5 +12,8 @@ function add_fields(link, association, content) {
 	var target = $(link).parent().prev(":visible");
 	if (target.length == 0)
 		target = $(link).parent();
-	target.append(content.replace(regexp, new_id));
+	var new_fields = $(content.replace(regexp, new_id));
+	new_fields.hide().appendTo(target).fadeIn();
+	//$(content.replace(regexp, new_id)).appendTo(target).fadeIn(); //.slideDown('slow');
+	//target.append(content.replace(regexp, new_id)).slideDown('slow');
 }
