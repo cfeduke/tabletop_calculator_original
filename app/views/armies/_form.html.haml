@@ -37,11 +37,18 @@
 		var sum = 0
 		options.each(function(index,element) {
 			try {
-				sum += parseFloat(element.value);
+				var points = parseFloat(element.value);
+				if (!isNaN(points))
+					sum += points;
 			} catch (e) { console.log("Couldn't parse " + element.value)}
 		})
 		console.log(sum);
-		unit.find(".unit_point_total").text(sum);
+		fade_text(unit.find(".unit_point_total"), (sum));
+	}
+	
+	function fade_text(element, text)
+	{
+		element.text(text);
 	}
 	
 	$(document).ready(function() {

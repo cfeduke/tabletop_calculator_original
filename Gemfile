@@ -40,8 +40,7 @@ gem 'jquery-rails'
 # gem install nokogiri
 
 group :test do
-  gem 'rspec'
-  gem 'rspec-rails'
+  gem 'rspec', ">= 2.1.0"
   gem 'factory_girl'
   gem 'webrat', :git => 'https://github.com/kalv/webrat.git'
   gem 'database_cleaner'
@@ -54,4 +53,8 @@ group :test do
   #rake db:test:load
   #rake db:migrate
   #rake environment RAILS_ENV=test db:migrate
+end
+
+group :development, :test do
+	gem "rspec-rails", ">= 2.1.0"
 end

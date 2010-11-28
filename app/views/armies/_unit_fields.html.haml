@@ -1,15 +1,15 @@
-.fields.unit
-	.remove
-		= link_to_remove_fields "Remove Unit", f
-	.row
-		.field
-			= f.text_field :slot, :size => 10, :placeholder => "slot"
-		.field
-			= f.text_field :name, :placeholder => "name"
-		.field.unit_point_total
-			0
-	- f.fields_for :unit_options do |builder|
-		= render :partial => 'unit_option_fields', :locals => {:f => builder}
-
-.add
-	= link_to_add_fields "add", f, :unit_options
+.unit_animation_container
+	.fields.unit
+		.remove
+			= link_to_remove_fields "Remove Unit", f
+		.row
+			.field
+				= f.text_field :slot, :size => 10, :placeholder => "slot"
+			.field
+				= f.text_field :name, :placeholder => "name"
+			.field.unit_point_total
+				= f.object.nil? ? 0 : f.object.total_points
+		- f.fields_for :unit_options do |builder|
+			= render :partial => 'unit_option_fields', :locals => {:f => builder}
+	.add
+		= link_to_add_fields "add", f, :unit_options
