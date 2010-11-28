@@ -30,12 +30,20 @@
 		= f.submit
 		
 :javascript
-	function unit_sum()
+	function unit_sum(field)
 	{
-		
-		console.log(this.value);
+		var unit = $(field).parents(".unit");
+		var options = unit.find(".unit_option_points:visible");
+		var sum = 0
+		options.each(function(index,element) {
+			try {
+				sum += parseFloat(element.value);
+			} catch (e) { console.log("Couldn't parse " + element.value)}
+		})
+		console.log(sum);
+		unit.find(".unit_point_total").text(sum);
 	}
 	
 	$(document).ready(function() {
-		$("input.unit_option_points").blur(unit_sum);
+		
 	});

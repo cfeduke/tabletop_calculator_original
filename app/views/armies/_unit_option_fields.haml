@@ -4,4 +4,4 @@
 	.field
 		= f.text_field :name, :placeholder => "name"
 	.field
-		= f.number_field :points, :size => 10, :class => "unit_option_points"
+		= f.number_field :points, :size => 10, :class => "unit_option_points", :onblur => "unit_sum(this)"
