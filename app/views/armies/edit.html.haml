@@ -1,2 +1,7 @@
-%h1 Edit #{@army.name}
-= render 'form'
+- content_for :head do
+	= render 'javascript_includes'
+
+%article#army_form
+	%header
+		%h1 #{@army.name}
+	= render 'form'

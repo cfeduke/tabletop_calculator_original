@@ -7,8 +7,7 @@
 				= f.text_field :slot, :size => 10, :placeholder => "slot"
 			.field
 				= f.text_field :name, :placeholder => "name"
-			.field.unit_point_total
-				= f.object.nil? ? 0 : f.object.total_points
+			.field.unit_point_total= f.object.nil? ? 0 : f.object.total_points
 		- f.fields_for :unit_options do |builder|
 			= render :partial => 'unit_option_fields', :locals => {:f => builder}
 	.add

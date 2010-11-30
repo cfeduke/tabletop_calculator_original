@@ -13,13 +13,16 @@
 	.field
 		= f.label :point_total
 		%br
-		~ f.number_field :point_total, :size => 8
+		~ f.number_field :point_total, :size => 8, :onblur => "all_sum()"
 	.field
 		= f.label :description
 		%br
 		~ f.text_area :description, {:rows => 5}
 	
-	%h2 Units
+	%header.units
+		%hgroup
+			%h2 Units
+			%h2.army_point_total 0
 	#units
 		- f.fields_for :units do |builder|
 			= render :partial => 'unit_fields', :locals => {:f => builder}
@@ -28,29 +31,4 @@
 		= link_to_add_fields "Add Unit", f, :units
 	.actions
 		= f.submit
-		
-:javascript
-	function unit_sum(field)
-	{
-		var unit = $(field).parents(".unit");
-		var options = unit.find(".unit_option_points:visible");
-		var sum = 0
-		options.each(function(index,element) {
-			try {
-				var points = parseFloat(element.value);
-				if (!isNaN(points))
-					sum += points;
-			} catch (e) { console.log("Couldn't parse " + element.value)}
-		})
-		console.log(sum);
-		fade_text(unit.find(".unit_point_total"), (sum));
-	}
-	
-	function fade_text(element, text)
-	{
-		element.text(text);
-	}
-	
-	$(document).ready(function() {
-		
-	});
+

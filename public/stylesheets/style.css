@@ -2,9 +2,10 @@ body { margin:50px; font-size:0.9em; line-height:20px; font-family: "Myriad Pro"
 a { color:#C23B01;}
 a:hover { color:#333333;}
 #container { background-color:#fff;}
-header { background:url(../images/header_bckg_main.jpg) repeat-x  #C13B00; display:block;}
-header hgroup { background:url(../images/header_bckg.jpg) no-repeat; padding:30px 0 0 40px; height:83px; display:block;}
-header hgroup h1 { color:#ffffff; font-style:italic;}
+header#header { background:url(../images/header_bckg_main.jpg) repeat-x  #C13B00; display:block;}
+header#header hgroup { background:url(../images/header_bckg.jpg) no-repeat; padding:30px 0 0 40px; height:83px; display:block;}
+header#header hgroup h1 { color:#ffffff; font-style:italic;}
+header#header h1 { margin:0; padding:0; text-transform:uppercase; font-size:1.8em; color:#1B1D1E; font-style:italic; text-shadow:0 2px 3px rgba(0,0,0,.8);}
 /*#logo a{ color:#FFFFFF; text-decoration:none; font-weight:bold; font-size:20px; font-style:italic; text-transform:uppercase;}*/
 nav { background: url(../images/menu_bckg.jpg) #FF6600; height:30px; }
 nav ul { margin:0; padding:0;}
@@ -16,21 +17,28 @@ nav a:hover{ padding-top:4px; height:22px; background:url(../images/menu_bckg_ov
 #text p { padding:0 20px 10px 0;}
 #text li {list-style:none; padding-left:20px; background:url(../images/li.gif) no-repeat 0px 7px;}
 aside { float:right; width:200px; padding: 0 20px 0 10px; font-size:14px; display:block;}
-header h1 { margin:0; padding:0; text-transform:uppercase; font-size:1.8em; color:#1B1D1E; font-style:italic; text-shadow:0 2px 3px rgba(0,0,0,.8);}
+
 
 section#main { float:left; background:url(../images/sidebar_bckg.gif) repeat-y top right #fff; padding:20px 0 0 0;}
-footer { background:url(../images/footer_bckg.jpg) #424E4F; height:102px; clear:both; font-style:italic; display:block; }
-footer a { color:#FFFFFF;}
-footer a:hover { text-decoration:none;}
-#left_footer { float:left; padding:40px 0 0 30px; text-transform:uppercase; color:#FFFFFF; font-weight:bold; font-size:12px;}
-#right_footer { float:right; padding:40px 30px 0 0; text-transform:uppercase; color:#FFFFFF; font-weight:bold; font-size:12px; text-align:right; width:400px;}
+footer#footer { background:url(../images/footer_bckg.jpg) #424E4F; height:102px; clear:both; font-style:italic; display:block; }
+footer#footer a { color:#FFFFFF;}
+footer#footer a:hover { text-decoration:none;}
+footer#footer #left_footer { float:left; padding:40px 0 0 30px; text-transform:uppercase; color:#FFFFFF; font-weight:bold; font-size:12px;}
+footer#footer #right_footer { float:right; padding:40px 30px 0 0; text-transform:uppercase; color:#FFFFFF; font-weight:bold; font-size:12px; text-align:right; width:400px;}
 
+header.units {display:table; width:100%;}
+header.units hgroup {display:table-row;}
+header.units hgroup h2 {display:table-cell;}
+header.units hgroup h2.army_point_total {display:table-cell;text-align:right;}
 div.row {display:table-row;}
 .fields div.field {display:table-cell;}
 div.fields {}
 div.remove {text-align:right;padding-right:5px;}
 div.add {text-align:right;}
 .unit_point_total {text-align:center;font-size:x-large;}
+.army_point_total {text-align:right;}
 .placeholder {color:#aaa;}
 div#units {display:table;}
 .row.unit_option {}
+.green {color:green;}
+.red {color:red;}

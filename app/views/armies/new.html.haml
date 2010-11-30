@@ -1,6 +1,7 @@
 - content_for :head do
-	= javascript_include_tag "jquery.tmpl.min.js"
-	= javascript_include_tag "jquery.placeholder.js"
+	= render 'javascript_includes'
 
-%h1 New Army
-= render 'form'
+%article#army_form
+	%header
+		%h1 New Army
+	= render 'form'
